@@ -1,0 +1,8 @@
+<% @kittens.each do |kitten| %>
+	<h3> Kitten Details </h3>
+	<p>Name: <%= kitten.name %> </p>
+	<p>Age: <%= kitten.age %> </p>
+	<p>Cuteness: <%= kitten.cuteness %> </p>
+	<p>Softness: <%= kitten.softness %> </p>
+	<%= link_to "Delete Kitten", kitten, method: :delete %>
+<% end %>
